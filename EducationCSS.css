@@ -1,0 +1,410 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.3fr 0.2fr 2fr 0.2fr 2.5fr 0.2fr 2.8fr 0fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Title Title Title"
+    "Nav Nav Nav"
+    "PageTitle PageTitle PageTitle"
+    "GISTitle GISTitle GISTitle"
+    "GISContent GISContent GISContent"
+    "SusDevTitle SusDevTitle SusDevTitle"
+    "SusDevContent SusDevContent SusDevContent"
+    "EnvMgmtTitle EnvMgmtTitle EnvMgmtTitle"
+    "EnvMgmtContent EnvMgmtContent EnvMgmtContent"
+    "Footer Footer Footer";
+}
+
+.Title { grid-area: Title; }
+
+.Nav { grid-area: Nav; }
+
+.PageTitle { grid-area: PageTitle; 
+             justify-items: center;}
+
+.GISTitle { grid-area: GISTitle; 
+			justify-items: center;
+			padding-bottom: 20px;
+			}
+
+.GISContent {  display: grid;
+  grid-template-columns: 0.3fr 1.7fr 1fr 1.7fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". GISImage GISText GISText ."
+    ". GISImage GISText GISText ."
+    ". GISImage GISText GISText .";
+  grid-area: GISContent;
+}
+
+.GISImage { grid-area: GISImage; }
+
+.GISText { grid-area: GISText; }
+
+.SusDevTitle { grid-area: SusDevTitle;
+				justify-items: center;
+			    padding-bottom: 20px;
+				}
+
+.SusDevContent {  display: grid;
+  grid-template-columns: 0.3fr 1.7fr 1fr 1.7fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". SusDevText SusDevText SusDevImg ."
+    ". SusDevText SusDevText SusDevImg ."
+    ". SusDevText SusDevText SusDevImg .";
+  grid-area: SusDevContent;
+}
+
+.SusDevText { grid-area: SusDevText; }
+
+.SusDevImg { grid-area: SusDevImg; }
+
+.EnvMgmtTitle { grid-area: EnvMgmtTitle;
+				justify-items: center;}
+
+.EnvMgmtContent {  display: grid;
+  grid-template-columns: 0.3fr 1.7fr 1fr 1.7fr 0.3fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". EnvMgmtImage EnvMgmtText EnvMgmtText ."
+    ". EnvMgmtImage EnvMgmtText EnvMgmtText ."
+    ". EnvMgmtImage EnvMgmtText EnvMgmtText .";
+  grid-area: EnvMgmtContent;
+}
+
+.EnvMgmtImage { grid-area: EnvMgmtImage;}
+
+.EnvMgmtText { grid-area: EnvMgmtText; }
+
+.Footer {grid-area: Footer;
+		text-align: center;}
+
+
+
+@font-face {
+   font-family: chunkfive;
+   src: url(ChunkFive-Regular.otf);
+}
+
+
+@font-face {
+   font-family: roboto;
+   src: url(Roboto-Regular.ttf);
+}
+
+
+body{background-color: #de8ba1;
+     margin: 0px}
+h1{font-family: chunkfive}
+h2{font-family: chunkfive;
+   margin-bottom: 2px}
+footer{background-color:#00a176;
+       margin-top: 0px;}
+	   
+	   
+	   .WebTitle {
+			background-color:#af134f;
+			font-family: chunkfive;
+			color: white;
+			font-size: 50px;
+			display: flex;
+			align-items: center;
+			justify-content:center;}   
+
+.lightpink {background-color: #ecb3c1;
+            padding: 20px;}
+.regularpink{background-color: #de8ba1;
+            padding: 20px;}
+	   
+
+.Absolute-Center {
+
+  display: flex; 
+
+  align-items: center;
+
+  justify-content: center; 
+
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.headphoto {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	display: grid;
+	padding-top: 20px;
+}
+
+.para{
+      border-radius: 25px;
+      background: #00a176;
+      padding: 10px;
+      box-shadow: 7px 7px;
+	  font-family: roboto;
+	  margin-left: 15px;
+	  margin-right: 15px;
+	  margin-bottom: 15px;
+ } 
+
+
+
+
+#video {
+	margin-bottom: 15px;
+}
+
+
+.animations{
+	width: 200px;
+	height: 200px;
+	padding-top: 10px;
+	line-height: 100px;
+    text-align: center;
+	margin: 20px;
+	object-fit: contain;
+	
+}
+.animations img {
+  max-width: 100%;
+  height: auto;
+}
+
+.animations2{
+	width: 300px;
+	height: 300px;
+	line-height: 100px;
+    text-align: center;
+	object-fit: contain;
+	
+	
+}
+.animations2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.buttons2 {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  text-align: center;
+		  box-shadow: 2px 2px;  
+}
+.buttons2:hover {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+				background-color:  #00a176;
+
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #af134f;
+  position: relative;
+  font-family: chunkfive;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: chunkfive;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #af134f ;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #af134f;
+  color: white;
+}
+
+/* Desktop Nav Style code is mix of W3schools/ChatGPT that has been amended */
+.desktopnav{background-color: #c81b61;
+            overflow:hidden;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		    gap: 10px;
+
+}
+
+.desktopnav a {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  box-shadow: 2px 2px;
+		  padding: 10px;
+		  color: black;
+		  text-decoration: none;
+}
+
+.formstyle {
+      border-radius: 25px;
+      background: #00a176;
+      padding: 10px;
+      box-shadow: 7px 7px;
+	  font-family: roboto;
+	  margin-left: 15px;
+	  margin-right: 15px;
+ } 
+ 
+ 
+#phonelogo{
+	width: 25px;
+	height:25px;
+}
+/* Code from ChatGPT*/
+/* Default styles (Mobile) */
+.topnav {
+  display: flex; /* Show hamburger menu */
+}
+
+.desktopnav {
+  display: none; /* Hide desktop nav by default */
+}
+
+@media (max-width: 768px){
+.Title {
+  display: none; /* Hide desktop nav by default */
+	}
+}
+
+/* Media query for larger screens (Desktop) */
+@media (min-width: 768px) {
+  .topnav {
+    display: none; /* Hide hamburger menu */
+  }
+
+  .desktopnav {
+    display: flex; /* Show desktop navigation */
+  }
+}
+
+/*Media query for mobile*/
+@media (max-width: 768px) {
+	.container {  
+  display: grid;
+  grid-template-columns: 1fr; /* One column layout */
+  grid-template-rows: auto; /* Let rows adjust automatically based on content */
+  gap: 0px 0px;
+  grid-auto-flow: row;
+}
+
+.Title { grid-area: Title; }
+
+.Nav { grid-area: Nav; }
+
+.PageTitle { grid-area: PageTitle; 
+             justify-items: center; }
+
+.GISTitle { grid-area: GISTitle; 
+			justify-items: center;
+			padding-bottom: 20px;
+			}
+
+.GISContent {  
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for the GIS content */
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "GISImage"
+    "GISText";
+  grid-area: GISContent;
+  justify-items: center; /* Center the content horizontally */
+  align-items: center;
+}
+
+.GISImage { grid-area: GISImage;
+			}
+
+.GISText { grid-area: GISText; }
+
+.SusDevTitle { grid-area: SusDevTitle;
+				justify-items: center;
+			    padding-bottom: 20px;
+				}
+
+.SusDevContent {  
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for the SusDev content */
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "SusDevImg"
+    "SusDevText";
+  grid-area: SusDevContent;
+  justify-items: center; /* Center the content horizontally */
+  align-items: center;
+}
+
+.SusDevText { grid-area: SusDevText; }
+
+.SusDevImg { grid-area: SusDevImg; }
+
+.EnvMgmtTitle { grid-area: EnvMgmtTitle;
+				justify-items: center; }
+
+.EnvMgmtContent {  
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for the EnvMgmt content */
+  grid-template-rows: auto;
+  gap: 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "EnvMgmtImage"
+    "EnvMgmtText";
+  grid-area: EnvMgmtContent;
+  justify-items: center; /* Center the content horizontally */
+  align-items: center;
+}
+
+.EnvMgmtImage { grid-area: EnvMgmtImage; }
+
+.EnvMgmtText { grid-area: EnvMgmtText; }
+
+.Footer { grid-area: Footer; }
+}
+
+

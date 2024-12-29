@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Yasmin Hayes Contact</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+<meta name="description" content="CV for an Environmental and Sustainability Professional with GIS experience based in Dublin">
+<link href="contactcss.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+
+<body>
+<div class="container">
+
+  <div class="Title">
+  <header class="WebTitle">Yasmin Hayes</header>
+  </div>
+  
+<div class="Nav">  
+	<div class="topnav">
+		  <a href="#home" class="active">Yasmin Hayes</a>
+		  <!-- Navigation links (hidden by default) -->
+		  <div id="myLinks">
+			<a href="Index.html">About Yasmin</a>
+			<a href="EducationFinal.html">Education</a>
+			<a href="WorkExperience.html">Work Experience</a>
+			<a href="contact.html">Contact</a>
+		  </div>
+		  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links Taken from W3Schools and amended -->
+		  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		  </a>
+	</div>
+		<!-- Desktop Layout -->
+
+		<nav class="desktopnav">
+
+		<a href="Index.html">About Yasmin</a>
+		<a href="EducationFinal.html">Education</a>
+		<a href="WorkExperience.html">Work Experience</a>
+		<a href="contact.html">Contact</a>
+
+		</nav>
+</div>
+
+<div class="PageTitle">
+<div class="Absolute-Center">
+  <header>
+      <h1>Contact <img src="ContactImg.png" alt="animated picture of a phone" id="phonelogo"></h1>
+  </header>
+ </div>
+</div> 
+
+
+<div class="Content">
+<form class="formstyle">
+	First Name:&nbsp; &nbsp;<input type="text" id="fname" name="fname"><br>
+	Surname:&nbsp; &nbsp;<input type="text" id="lname" name="lname"><br>
+	Email:&nbsp; &nbsp;<input type="text" id="emailaddress" name="emailaddress" value=""><br>
+	Phone Number:&nbsp; &nbsp;<input type="text" id="phonenum" name="phonenum" value=""><br>
+	How would you like to be contacted?
+  <input type="radio" id="Email" name="contact_pref" value="Email">
+  <label for="Email">Email</label>
+  <input type="radio" id="Phone" name="contact_pref" value="Phone">
+  <label for="Phone">Phone</label><br>
+	Please leave a message here.<br>
+	<textarea name="message" rows="10" cols="30"></textarea><br>
+<button onclick="popup()">Submit</button>
+ </form>
+</div>
+
+</div>
+<div class="Footer"><footer><a href="https://www.linkedin.com/in/yasmin-hayes/"><img src="linkedin.png" alt="clickable linkedin icon leading to Yasmin's LinkedIn Page" style="width:20px;height:20px;"></a></footer></div>  
+   
+   
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+function popup(){
+	alert("Thank you. I will contact you as soon as possible.");
+}
+</script>
+
+
+
+
+</body>
+</html>

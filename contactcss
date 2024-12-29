@@ -1,0 +1,209 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 0.2fr 4.1fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Title Title Title"
+    "Nav Nav Nav"
+    "PageTitle PageTitle PageTitle"
+    "Content Content Content"
+    "Footer Footer Footer";
+}
+
+.Title { grid-area: Title;
+}
+
+.Nav { grid-area: Nav; }
+
+.PageTitle { grid-area: PageTitle; 
+			 justify-items: center;}
+
+.Content { grid-area: Content; }
+
+.Footer { grid-area: Footer; }
+
+
+@font-face {
+   font-family: chunkfive;
+   src: url(ChunkFive-Regular.otf);
+}
+
+
+@font-face {
+   font-family: roboto;
+   src: url(Roboto-Regular.ttf);
+}
+
+
+body{background-color: #de8ba1;
+     margin: 0px}
+h1{font-family: chunkfive}
+h2{font-family: chunkfive;
+   margin-bottom: 2px}
+footer{background-color:#00a176;
+       margin-top: 20px;}
+
+
+.WebTitle{background-color:#af134f;
+			font-family: chunkfive;
+			color: white;
+			font-size: 50px;
+			display: flex;
+			align-items: center;
+            justify-content:center;}
+
+
+.buttons2 {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  text-align: center;
+		  box-shadow: 2px 2px;  
+}
+.buttons2:hover {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+				background-color:  #00a176;
+
+}
+
+.formstyle {
+      border-radius: 25px;
+      background: #00a176;
+      padding: 30px;
+      box-shadow: 7px 7px;
+	  font-family: roboto;
+	  margin-left: 200px;
+	  margin-right: 200px;
+ } 
+ 
+
+#phonelogo{
+	width: 25px;
+	height:25px;
+}
+
+
+/* Style the navigation menu/hamburger menu - code taken from W3schools and amended */
+.topnav {
+  overflow: hidden;
+  background-color: #af134f;
+  position: relative;
+  font-family: chunkfive;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+
+.topnav a {
+  color: white;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: chunkfive;
+}
+
+
+.topnav a.icon {
+  background: #af134f ;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+}
+
+
+.active {
+  background-color: #af134f;
+  color: white;
+}
+
+/* Desktop Nav Style code is mix of W3schools/ChatGPT which has been amended */
+.desktopnav{background-color: #c81b61;
+            overflow:hidden;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		    gap: 10px;
+
+}
+
+.desktopnav a {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  box-shadow: 2px 2px;
+		  padding: 10px;
+		  color: black;
+		  text-decoration: none;
+}
+
+
+/* Code from ChatGPT*/
+.topnav {
+  display: flex; 
+}
+
+.desktopnav {
+  display: none; 
+}
+
+@media (max-width: 768px){
+.WebTitle {
+  display: none; 
+	}
+	
+}
+
+@media (min-width: 768px) {
+  .topnav {
+    display: none; 
+  }
+
+  .desktopnav {
+    display: flex; 
+  }
+  
+}
+
+/*Below media query code taken from ChatGPPT*/
+@media (max-width: 768px) {
+      .formstyle {
+        margin-left: 20px;  
+        margin-right: 20px; 
+        width: auto;        
+        padding: 20px;      
+      }
+
+      .formstyle input, .formstyle textarea {
+        width: 100%; 
+        box-sizing: border-box; 
+      }
+
+      .formstyle button {
+        width: 100%;  
+        padding: 10px; 
+        font-size: 1.2em; 
+      }
+
+      .formstyle label {
+        display: inline-block; 
+        margin-bottom: 5px;
+      }
+
+      .formstyle input[type="text"],
+      .formstyle textarea {
+        font-size: 1em; 
+      }
+    }

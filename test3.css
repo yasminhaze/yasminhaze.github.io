@@ -1,0 +1,343 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 0.3fr 3.3fr 0.1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "WebTitle WebTitle WebTitle"
+    "Navbar Navbar Navbar"
+    "Content Content Content"
+    "Footer Footer Footer";
+
+}
+
+.WebTitle { grid-area: WebTitle;
+			background-color:#af134f;
+			font-family: chunkfive;
+			color: white;
+			font-size: 50px;
+			display: flex;
+			align-items: center;
+			justify-content:center;}
+
+.Navbar { grid-area: Navbar; }
+
+.Content { grid-area: Content;
+align-content: center;
+justify-content: center; }
+
+.Footer { grid-area: Footer;
+text-align: center;}
+
+
+
+@font-face {
+   font-family: chunkfive;
+   src: url(ChunkFive-Regular.otf);
+}
+
+
+@font-face {
+   font-family: roboto;
+   src: url(Roboto-Regular.ttf);
+}
+
+
+body{background-color: #de8ba1;
+     margin: 0px}
+h1{font-family: chunkfive}
+h2{font-family: chunkfive;
+   margin-bottom: 2px}
+footer{background-color:#00a176;
+       margin-top: 20px;}
+	   
+	   
+
+.lightpink {background-color: #ecb3c1;
+            padding: 20px;}
+.regularpink{background-color: #de8ba1;
+            padding: 20px;}
+	   
+
+.Absolute-Center {
+
+  display: flex; 
+
+  align-items: center;
+
+  justify-content: center; 
+
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+.headphoto {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	display: grid;
+	padding-top: 20px;
+}
+
+.para{
+      border-radius: 25px;
+      background: #00a176;
+      padding: 10px;
+      box-shadow: 7px 7px;
+	  font-family: roboto;
+	  margin-bottom: 15px;
+	  margin-left: 10px
+ } 
+
+
+
+
+#video {
+	margin-bottom: 15px;
+}
+
+
+.animations{
+	width: 200px;
+	height: 200px;
+	padding-top: 10px;
+	line-height: 100px;
+    text-align: center;
+	margin: 20px;
+	object-fit: contain;
+	
+}
+.animations img {
+  max-width: 100%;
+  height: auto;
+}
+
+.animations2{
+	width: 300px;
+	height: 300px;
+	padding-top: 10px;
+	line-height: 100px;
+    text-align: center;
+	margin: 10px;
+	object-fit: contain;
+	
+	
+}
+.animations2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+.buttons2 {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  text-align: center;
+		  box-shadow: 2px 2px;  
+}
+.buttons2:hover {box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+				background-color:  #00a176;
+
+}
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #af134f;
+  position: relative;
+  font-family: chunkfive;
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 17px 17px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  font-family: chunkfive;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #af134f ;
+  display: block;
+  position: absolute;
+  font-size: 25px;
+  right: 0;
+  top: 0;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #af134f;
+  color: white;
+}
+
+/* Desktop Nav Style code is mix of W3schools/ChatGPT that has been amended */
+.desktopnav{background-color: #c81b61;
+            overflow:hidden;
+			padding: 10px;
+			display: flex;
+			justify-content: center;
+		    gap: 10px;
+
+}
+
+.desktopnav a {border-radius: 12px;
+          font-family: chunkfive;
+		  font-size: 20px;
+		  background-color:#ecb3c1;
+		  box-shadow: 2px 2px;
+		  padding: 10px;
+		  color: black;
+		  text-decoration: none;
+}
+
+.formstyle {
+      border-radius: 25px;
+      background: #00a176;
+      padding: 10px;
+      box-shadow: 7px 7px;
+	  font-family: roboto;
+	  margin-left: 15px;
+	  margin-right: 15px;
+ } 
+ 
+ 
+#phonelogo{
+	width: 25px;
+	height:25px;
+}
+/* Code from ChatGPT*/
+/* Default styles (Mobile) */
+.topnav {
+  display: flex; /* Show hamburger menu */
+}
+
+.desktopnav {
+  display: none; /* Hide desktop nav by default */
+}
+
+/* Media query for larger screens (Desktop) */
+@media (min-width: 768px) {
+  .topnav {
+    display: none; /* Hide hamburger menu */
+  }
+
+  .desktopnav {
+    display: flex; /* Show desktop navigation */
+  }
+}
+
+
+
+/* Media query for larger screens (Desktop) */
+@media (min-width: 1024px) {
+.Content {display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.8fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "PageTitle PageTitle PageTitle"
+    "ContentWeb ContentWeb ContentWeb"
+    "ButtonSectionWeb ButtonSectionWeb ButtonSectionWeb";
+}
+
+.PageTitle { grid-area: PageTitle; }
+
+
+.ContentWeb  {display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "YasminPicture . . ."
+    "YasminPicture . . ."
+    "YasminPicture . . ."; 
+  grid-area: ContentWeb; 
+}
+
+.YasminPicture { 
+				grid-column: 1;
+				grid-row:2;
+				display: flex; 
+				justify-items: center;
+				justify-content: center;
+				margin-left: 100px;
+				align-content: stretch;
+				}
+				
+
+.YasminDesc { 
+              grid-column: 2;
+			  grid-row:2;
+			  align-content: stretch;
+			  justify-items: center;
+			  justify-content: center;
+			  width: auto;
+			  }
+
+.ButtonSectionWeb {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "EducationImage WorkImage ContactImage"
+    "EducationImage WorkImage ContactImage"
+    "EdButton WorkButton ContactButton";
+  grid-area: ButtonSectionWeb;
+}
+
+.EducationImage { grid-area: EducationImage;
+					grid-column: 1;
+					grid-row:3}
+
+.WorkImage { grid-area: WorkImage; 
+             grid-column: 2;
+			grid-row:3}
+
+.ContactImage { grid-area: ContactImage;
+                grid-column: 3;
+			    grid-row:3 }
+
+.EdButton { grid-area: EdButton; 
+            grid-column: 1;
+			grid-row:4}
+
+.WorkButton { grid-area: WorkButton; 
+			grid-column: 2;
+			grid-row:4}
+
+.ContactButton { grid-area: ContactButton;
+				grid-column: 3;
+				grid-row:4; }
+}
+
+
+
+
+
+
+
+
